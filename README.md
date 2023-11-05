@@ -120,4 +120,41 @@ These data cleaning steps were undertaken to prepare the dataset for subsequent 
     ### 6.2 Skewness Treatment
     - Skewness treatment, a crucial component of Exploratory Data Analysis (EDA), involves addressing data distribution imbalances to improve model accuracy and reliability by ensuring that features exhibit a more symmetric and normal distribution.
 
+-------------------------------------------------
 
+## 7. Model After EDA
+- Building models after performing EDA, including outlier, class imbalance, and skewness treatment, is essential to harness the insights gained from data preprocessing and to create predictive models that can effectively capture the nuances of the dataset.
+
+    ![EDAmodel1](images/EDAmodel1.png)
+
+    ### Observation
+    - After performing **class imbalance technique (IMB learn oversampling), outlier treatment, and skewness treatment**, we can observe **significant improvements** in **precision** compared to the base models.
+    - **Random-Forest & XGB** model consistently demonstrate high accuracy, precision, recall, and F1-score values across both classes.
+    - **Random-Forest & XGB** model excel in correctly classifying instances, with fewer false positives and a balanced trade-off between precision and recall.
+
+    ### Conclusion
+    - **Random-Forest or  & XGB** model will be well-suited for tasks where overall accuracy and reliability in predictions are crucial.
+
+
+------------------------------------
+
+## 8. Feature selection
+
+- Feature selection was performed using Recursive Feature Elimination (RFE).
+
+-------------------------------------
+
+
+## 9. Model After Feature selection
+
+- Developing models after feature selection using the Recursive Feature Elimination (RFE) method is akin to crafting a fine-tuned instrument, where only the most essential and harmonious features are retained, resulting in predictive models that are more efficient and precise.
+
+    ![Alt text](images/FSmodel1.png)
+
+    ### Observation
+    - **After feature selection**, the models did not exhibit any major differences in their performance metrics.
+    - Despite the reduction in the number of features, the DecisionTree, RandomForest, and XGB models continue to demonstrate high accuracy, precision, recall, and F1-scores.
+
+    ### Conclusion
+    - Model performance after feature selection showed **no significant changes**.
+    - The **RandomForest** maintains its suitability for tasks where overall accuracy and precision are crucial.
